@@ -1,0 +1,55 @@
+(Humbergmenu js for popup )-------------------------------------------------------------------------
+
+
+jQuery(document).ready(function(){
+    jQuery('.menu-home-container').before('<div class="menuIcon"><span></span></div>');
+    jQuery('.menuIcon').click(function(){
+    jQuery('body').toggleClass('slider');
+    });
+}); 
+
+
+
+(function file jquery for humberger menu)------------------------------------------------------------
+
+function add_this_script_footer(){ ?>
+    <script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/fancybox.min.js"></script>
+    <script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/custom.js"></script>      
+<?php }
+add_action('wp_footer', 'add_this_script_footer'); 
+
+(Show/Hide div or class)------------------------------------------------------------------------------
+
+   
+      $('.yes-filling-details').show();
+      $('.no-filling-details').hide();
+    $("#msp-radio input").change(function () {
+      var val = $(this).val();
+      if(val=='Yes'){
+        $('.yes-filling-details').show();
+        $('.no-filling-details').hide();
+      } else {
+        $('.no-filling-details').show();
+        $('.yes-filling-details').hide();
+      }
+
+(Header sticky )----------------------------------------------------------------------------------------------------
+
+ jQuery(window).scroll(function(event) {
+    var scrolltop = jQuery(this).scrollTop();
+      if (scrolltop >= 50) {
+        jQuery('.recipe_collection_portions_cook_timehack').addClass('sticky');
+      } else {
+        jQuery('.recipe_collection_portions_cook_timehack').removeClass('sticky');
+      }
+    });
+
+
+
+(Triggred click)--------------------------------------------------------------------------------------
+
+
+            $(".upload-resume div").click(function(){
+              $(".upload-resume .wpcf7-file").trigger("click");
+          });
+         
