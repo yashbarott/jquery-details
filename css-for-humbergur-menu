@@ -1,0 +1,12 @@
+.menuIcon{float:right;display:block;border-radius:2px;background-color:#ED6AA8;top:-20px;right:0px;font-size:2rem;width:40px;height:40px;position:absolute;cursor:pointer;}
+	.menuIcon span::after{position:absolute;content:'';background-color:#fff;width:25px;height:2px;top:5px;left:0px;}
+	.menuIcon span{position:absolute;content:'';background-color:#fff;width:25px;height:2px;top:15px;left:7px;}
+	.menuIcon span::before{position:absolute;content:'';background-color:#fff;width:25px;height:2px;top:10px;left:0px;}
+	.slider .main-menu .menu-nav-menu-container{left:0!important;transform:translateX(0px)!important;transition:0.5s all ease!important;}
+	.main-menu .menu-nav-menu-container{position:fixed!important;width:250px!important;left:-300px!important;top:0!important;height:100%!important;transform:translateX(-300px)!important;transition:0.5s all ease!important;background: #ED6AA8;}
+	.main-menu .menu-nav-menu-container ul{text-align:start;}
+	.main-menu .menu-nav-menu-container li{display:block;margin:15px 0;padding: 0px 20px;}
+	.main-menu .menu-nav-menu-container li a{color: #fff}
+	.main-menu .menu-button{margin:30px 0!important;}
+slider .menuIcon span::before {	transform: rotate(48deg);	top: 5px;}
+.slider .menuIcon span {	background: transparent;}
