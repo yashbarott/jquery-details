@@ -2,10 +2,11 @@
 
 
 jQuery(document).ready(function(){
-    jQuery('.menu-home-container').before('<div class="menuIcon"><span></span></div>');
-    jQuery('.menuIcon').click(function(){
-    jQuery('body').toggleClass('slider');
-    });
+     jQuery('.top-menu').before('<div class="openbtn"><div class="openbtn-area"><span></span><span></span><span></span></div></div>');
+        jQuery('.openbtn').click(function(){
+        jQuery('body').toggleClass('slider');
+        jQuery(this).toggleClass('active');
+        });
 }); 
 
 
