@@ -67,5 +67,4 @@
 	.main-menu .menu-nav-menu-container li{display:block;margin:15px 0;padding: 0px 20px;}
 	.main-menu .menu-nav-menu-container li a{color: #fff}
 	.main-menu .menu-button{margin:30px 0!important;}
-slider .menuIcon span::before {	transform: rotate(48deg);	top: 5px;}
-.slider .menuIcon span {	background: transparent;}
+
